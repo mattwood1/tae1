@@ -1,10 +1,25 @@
+/* Pinched from Weebly */
+@font-face {
+	font-family: 'Capture it';
+	src: url('/fonts/regular.ttf') format('truetype');
+}
+
+body {
+    font-family: "Questrial";
+    font-size: 15px;
+}
+
 .content {
-width: 900px;
-margin: 0 auto;
+    width: 900px;
+    margin: 0 auto;
 }
 
 h2 {
-    color: red;
+    color: #a82e2e;
+    font-family: "Capture it";
+    font-size: 28px;
+    line-height: 30px;
+    font-weight: 400;
 }
 
 li {
@@ -23,5 +38,5 @@ li {
         border-top: 10px black;
 }
 #main {
-    border: red;
+    border-top: 7px solid #a82e2e;
 }

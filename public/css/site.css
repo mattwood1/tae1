@@ -7,6 +7,9 @@
 body {
     font-family: "Questrial";
     font-size: 15px;
+    
+    background: url('//img/ăckground.jpg') repeat 0 0;
+    background-size: auto;
 }
 
 .content {

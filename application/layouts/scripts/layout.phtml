@@ -42,9 +42,8 @@ echo $this->doctype(); ?>
             <?php echo $this->partial('partials/navigation.phtml'); ?>
         <article>
             <div class="row-fluid">
-                <div class="span2"><?php echo $this->partial('partials/left.phtml'); ?></div>
-                <div class="span8">
-                    <?php echo $this->layout()->content; ?>
+                <div class="span2" id="left"><?php echo $this->partial('partials/left.phtml'); ?></div>
+                <div class="span8" id="main"><?php echo $this->layout()->content; ?>
                 </div> 
                 <div class="span2"><?php echo $this->partial('partials/right.phtml'); ?></div>    
             </div>

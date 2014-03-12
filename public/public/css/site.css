@@ -1,0 +1,35 @@
+/* Pinched from Weebly
+@font-face {
+	font-family: 'Capture it';
+	src: url('regular.eot');
+	src: url('regular.eot?') format('embedded-opentype'),
+	     url('regular.ttf') format('truetype');
+}
+
+.content {
+    width: 900px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: red;
+}
+
+li {
+    color: blue;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navbar {
+    opacity:0.95;
+}
+.wsite-elements wsite-not-footer {
+    border-top: 9px red;
+}
+#left {
+        border-top: 10px black;
+}
+#main {
+    border-top: 1px solid red;
+}

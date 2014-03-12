@@ -30,28 +30,23 @@ echo $this->doctype(); ?>
     <![endif]-->
 
 </head>
-
-
-<header class="container-fluid">
-<div id="content-header">
-                    <?php echo $this->partial('partials/header.phtml'); ?>
-                </div>
-       
-        </header>
-         
 <body>
+
 <div id="content">
     <div class="container-fluid">
-    <div id="nav-bar">
-                <?php echo $this->partial('partials/navigation.phtml'); ?>
-    </div>
-         <div class="span2" id="left"><?php echo $this->partial('partials/left.phtml'); ?></div>
-         <div class="span2" id="right"><?php echo $this->partial('partials/right.phtml'); ?></div>
+
         <div class="content">
-            
+            <header>
+                <div class="row-fluid">
+                    <?php echo $this->partial('partials/header.phtml'); ?>
+                </div>
+            </header>
+                <?php echo $this->partial('partials/navigation.phtml'); ?>
             <article>
                 <div class="row-fluid">
+                    <div class="span2" id="left"><?php echo $this->partial('partials/left.phtml'); ?></div>
                     <div class="span8" id="main"><?php echo $this->layout()->content; ?></div>
+                    <div class="span2" id="right"><?php echo $this->partial('partials/right.phtml'); ?></div>
                 </div>
             </article>
             <footer>
@@ -61,6 +56,5 @@ echo $this->doctype(); ?>
 
     </div> <!-- /container -->
 </div>
-
 </body>
 </html>

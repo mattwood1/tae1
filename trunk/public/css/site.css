@@ -8,13 +8,44 @@ body {
     font-family: "Questrial";
     font-size: 15px;
     
-    background: url('//img/ăckground.jpg') repeat 0 0;
+    /*background: url('/img/background.jpg')  no-repeat;*/
+    background-position: top center;
     background-size: auto;
+    
+    
+background: url('/img/background.jpg') no-repeat, -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0.65) 24%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(24%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0.65) 24%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover, rgba(0,0,0,0.65) 24%,rgba(0,0,0,0) 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover, rgba(0,0,0,0.65) 24%,rgba(0,0,0,0) 100%); /* IE10+ */
+background: radial-gradient(ellipse at center, rgba(0,0,0,0.65) 24%,rgba(0,0,0,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    
+}
+.background {
+    opacity: 0.2;
 }
 
 .content {
     width: 900px;
     margin: 0 auto;
+    background-color: white;
+    border-top: solid 10px red;
+    border-bottom-left-radius:2em;
+    border-bottom-right-radius:2em;
+    text-align: center;
+}
+#content-header {
+    width: 900px;
+    margin: 0 auto;
+    border-top-left-radius:2em;
+    border-top-right-radius:2em;
+    
+}
+#nav-bar {
+    width: 900px;
+    margin: 0 auto;
+    padding: 0 0 0 0;
 }
 
 h2 {
@@ -30,16 +61,124 @@ li {
     text-align: center;
     text-decoration: none;
 }
+.navbar-inner {
+    padding: 2px 2px 2px 2px;
+    border-bottom-left-radius:1em;
+    border-bottom-right-radius:1em;
+    border-top-left-radius:1em;
+    border-top-right-radius:1em;
+    height: 55px;
+}
+.fa {
+    width: 12px;
+    text-align: center;
+    padding-bottom: 0px;
+    margin: 3px 3px 3px 3px;
+    vertical-align: middle;
+    animation: 1 blink 1s step-end infinite
+}
+
+.label:hover {
+    transition:background 0.75s;
+    background: red;
+}
+.label {
+    background: white;
+    color: black;
+    border-radius: 1em;
+    }
+#searchbox {
+    margin-top: 8px;
+    box-shadow: -6px -5px 15px 4px black;
+}
+#searchbox:focus {
+    margin-top: 8px;
+    box-shadow: -6px -5px 15px 4px red;
+    transition:box-shadow 2s;
+    
+}
+#searchbutton {
+    margin-top: 6px;
+    background-color: black;
+    color: white;
+    border: 2px white;
+    background-image:none;
+    border-radius: 1em 1em 1em 1em;
+    transition: background-color 2s;
+    border-left: solid red 2px;
+}
+#searchbutton:hover {
+    background: -webkit-linear-gradient(left top, red , black); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, red, black); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, red, black); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, red , black); /* Standard syntax (must be last) */
+    transition: background 2s;
+    }
+#telno {
+    color: white;
+    margin-right: 9px;
+}
 
 .navbar {
     opacity:0.95;
+    height: auto;
+        }
+.navbar-inner ul li{
+    opacity: 0.8;
+    box-shadow: -6px -5px 15px 4px black;
+    margin-right: 10px;
+    margin-left: 7px;
+    transition:box-shadow 0.75s;
+    border-radius: 2em;
+    margin-top: 12px;
+    border-left: solid red 2px;
+    }
+
+.navbar-inner ul li:hover{
+        opacity: 0.8;
+        box-shadow: -6px -5px 15px 2px red;
+       }
+
+      
+.navbar-inverse .brand, .navbar-inverse .nav>li>a:hover{
+    color: white;
+    opacity: 0.8;
+    text-decoration: strong;
 }
-.wsite-elements wsite-not-footer {
+/*.wsite-elements wsite-not-footer {
     border-top: 9px red;
+}*/
+
+
+    
+.pull-right {
+    margin-top: 3px;
+}
+
+#main {
+    width: 880px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-top: 10px #a82e2e;
+}
+
+
+/* --- left & right bars---------- */
+#right {
+    position: absolute;
+    margin-right: 0px;
+    order: 10px solid white;
+    background-color: white;
+    top: 180px;
+    right: 20px;
+        
 }
 #left {
-        border-top: 10px black;
+        position: absolute;
+        margin-left: 0px;
+        border: 10px solid white;
+        background-color: white;
+        top: 180px;
+        
 }
-#main {
-    border-top: 7px solid #a82e2e;
-}
+/* --- left & right bars---------- */
